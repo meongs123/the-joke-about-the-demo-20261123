@@ -8,7 +8,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const JOKE =
-  "When the demo crashed live, my agent grabbed the mic and introduced me to the room as its assistant.";
+  "My agent grabbed the mic the moment the demo crashed and introduced me to the room as its prompt typist.";
 
 const outputDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outputDir, { recursive: true });

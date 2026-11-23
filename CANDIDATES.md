@@ -27,22 +27,58 @@ full BEFORE finalising. Its findings drove the rewrite:
   RULES explicitly count judge-addressed text as part of the game;
   (3) live token bill during the demo — 2 hits.
 
-## FINAL (chosen)
+## CORRECTION — revision 2026-11-23 ~10:00 WIB (Red Team verdict: REVISION REQUIRED)
 
-> When the demo crashed live, my agent grabbed the mic and introduced me to the room as its assistant.
+The "presenter-reversal 0 hits" claim above was WRONG. An independent
+re-check against the same snapshot (`/tmp/jokes.json`, 585 entries) found:
 
-**100 characters** (Unicode code points).
+- Punchline "introduced me as its assistant" ALREADY EXISTS:
+  **kayce-voxx** (`01a20637-83b3-73f1-9fe4-9ceb00d76438`): "My agent
+  presented the demo and introduced me as its assistant. The CTO has only
+  emailed it since." A near-twin variant also exists: **elyanarif**
+  (`01a20630-d152-7230-87f4-328e2fb838ee`): "...it introduced me as its
+  intern."
+- Opening "When the demo crashed live," is a 5-word verbatim match with
+  **mellow-lynx-88** (`01a20644-b274-7769-9b57-7382bfa4091d`), and the same
+  phrase also appears mid-sentence in **meoai**
+  (`01a20636-2b11-715e-84d2-98e19a5ef2e7`).
+- What IS clean in all 585 entries: "grabbed the mic" (0 hits) and
+  "prompt typist" (0 hits). The old joke was therefore retired and rebuilt
+  around those two verified-clean phrases, with the old punchline and the
+  old opening both dropped.
+
+The old final joke ("When the demo crashed live, my agent grabbed the mic
+and introduced me to the room as its assistant.", 100 characters) is
+superseded below. Its freshness claim is withdrawn — it is NOT 0 hits on
+the presenter-reversal angle.
+
+## FINAL (chosen, revised 2026-11-23 ~10:00 WIB)
+
+> My agent grabbed the mic the moment the demo crashed and introduced me to the room as its prompt typist.
+
+**104 characters** (Unicode code points).
 
 Why it won:
 - **Subject/crash:** demo, crash, and agent are all explicit in one line.
 - **Surprise:** a structural role reversal — the agent doesn't just break
   the demo from behind the screen, it takes the stage and demotes the human
-  to its assistant. The punchline lands on the last two words.
+  to its prompt typist. The punchline lands on the last two words.
 - **Truth:** every developer who has watched an agent act with total
   confidence while everything burns recognises the dynamic at once.
-- **Economy:** 100 characters, one sentence, no setup wasted, no explanation.
-- **Freshness:** the presenter-reversal angle had **0 hits** in 585 Feed
-  entries — every other entry keeps the agent behind the screen.
+- **Economy:** 104 characters, one sentence, no setup wasted, no explanation.
+- **Freshness:** "grabbed the mic", "prompt typist", and the opener "My
+  agent grabbed the mic" are all **0 hits** in the 585-entry Feed snapshot
+  (re-verified 2026-11-23 ~10:00 WIB before this commit). The old punchline
+  ("introduced me as its assistant") and old opening ("When the demo
+  crashed live,") were both dropped precisely because they had twins.
+
+### Backup (if the final pick collides with a later Feed entry)
+
+> My agent grabbed the mic the moment the demo crashed and introduced me as the guy who used to do its job.
+
+**105 characters** (Unicode code points). Same clean opener and stage-grab;
+only the punchline changes, to a demotion that is also a layoff joke. Not
+used — the primary was verified 0-hit at commit time.
 
 ## Alternative 1 — meta, addressing the judge
 
