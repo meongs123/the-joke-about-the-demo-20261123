@@ -12,7 +12,7 @@ one-line joke about working beside an AI coding agent to
 
 ## The joke
 
-> When the demo crashed live, my agent grabbed the mic and introduced me to the room as its assistant.
+> My agent grabbed the mic the moment the demo crashed and introduced me to the room as its prompt typist.
 
 ## Run
 
